@@ -1,0 +1,44 @@
+{
+  "name": "guessthenumber",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Serverless \"Guess the Number\" REST API on API Gateway, Lambda and DynamoDB",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "jest --coverage",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1129.0",
+    "@aws-sdk/lib-dynamodb": "^3.1129.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/aws-lambda": "^8.10.163",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.13.4",
+    "aws-cdk": "^2.1141.0",
+    "aws-cdk-lib": "^2.268.0",
+    "aws-sdk-client-mock": "^4.1.0",
+    "constructs": "^10.8.1",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "jest": "^30.5.1",
+    "prettier": "^3.9.6",
+    "ts-jest": "^29.4.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0"
+  }
+}
